@@ -1,0 +1,51 @@
+# Parameters for Adafactor:
+# ==============================================================================
+Adafactor.beta1 = 0.0
+Adafactor.clipping_threshold = 1.0
+Adafactor.decay_rate = 0.8
+Adafactor.do_clipping = True
+Adafactor.do_momentum = False
+Adafactor.epsilon1 = 1e-16
+Adafactor.epsilon2 = 0.001
+Adafactor.factored = True
+Adafactor.momentum_in_bfloat16 = False
+Adafactor.multiply_by_parameter_scale = True
+Adafactor.weight_decay_n_steps = 0
+Adafactor.weight_decay_rate = 1e-05
+
+# Parameters for backend:
+# ==============================================================================
+backend.name = 'jax'
+
+# Parameters for debug_pipeline:
+# ==============================================================================
+debug_pipeline.debug = False
+debug_pipeline.log_prefix = None
+debug_pipeline.method = 'pow'
+
+# Parameters for EvalTask:
+# ==============================================================================
+EvalTask.export_prefix = None
+EvalTask.metric_names = None
+EvalTask.n_eval_batches = 1
+EvalTask.sample_batch = None
+
+# Parameters for TrainTask:
+# ==============================================================================
+TrainTask.export_prefix = None
+TrainTask.loss_name = None
+TrainTask.n_steps_per_checkpoint = 100
+TrainTask.n_steps_per_permanent_checkpoint = None
+TrainTask.sample_batch = None
+
+# Parameters for warmup_and_rsqrt_decay:
+# ==============================================================================
+# None.
+
+# Parameters for WeightedCategoryAccuracy:
+# ==============================================================================
+# None.
+
+# Parameters for WeightedCategoryCrossEntropy:
+# ==============================================================================
+WeightedCategoryCrossEntropy.label_smoothing = None
